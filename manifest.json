@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "LinkShift",
+  "version": "1.0",
+  "version_name": "LinkShift v1.0 - Prima Release",
+  "description": "LinkShift reindirizza dinamicamente a URL specifici in base al dominio visitato, offrendo flessibilità e personalizzazione tramite un'interfaccia utente intuitiva.",
+  "short_name": "LinkShift",
+  "homepage_url": "https://github.com/GBochicchio/LinkShift",
+  "minimum_chrome_version": "89",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "default_title": "Clicca per attivare LinkShift!"
+  },
+  "options_page": "options.html"
+}
